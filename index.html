@@ -3,93 +3,279 @@
 <head>
   <title>Website Sederhana</title>
   <link rel="stylesheet" href="css/styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- BOOTSTRAP ICON-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 
 <body>
 
 <!-- ================= SECTION 1 : MENU ================= -->
-<table width="100%"" id="section1">
-  <tr>
-    <td align="center"><b>Header</b></td>
-    <td align="center"><b>Biodata</b></td>
-    <td align="center"><b>Portfolio</b></td>
-  </tr>
-</table>
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container py-2">
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold fs-5" href="#">
+      <img src="images/Logo.png" alt="Logo" height="35" class="me-2">
+    </a>
+    <!-- Icon Mobile -->
+    <div class="d-lg-none d-flex align-items-center">
+      <button class="btn btn-link text-dark me-2">
+        <i class="bi bi-search fs-5"></i>
+      </button>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <!-- Menu Collapse -->
+    <div class="collapse navbar-collapse gap-3" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-3">
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link text-secondary" href="#hero-section">Home</a>
+        </li>
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link text-secondary" href="#aboutme-section">About Me</a>
+        </li>
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link text-secondary" href="#service-section">Services</a>
+        </li>
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link text-secondary" href="#project-section">Projects</a>
+        </li>
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link text-secondary" href="#testimonial-section">Testimonials</a>
+        </li>
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link text-secondary" href="#contact-section">Contact</a>
+        </li>
+      </ul>
+      <!-- Button -->
+      <a href="#" class="btn btn-outline-primary fw-semibold px-4 d-none d-lg-block">Download CV</a>
+    </div>
+  </div>
+</nav>
 
-<br>
 
-<!-- ================= SECTION 2 : JUDUL KIRI - GAMBAR KANAN ================= -->
-<table width="100%" id="section2">
-  <tr>
-    <td width="50%" align="left" valign="top">
-      <h1>Selamat Datang di Website Saya</h1>
-      <p>
-        Ini adalah contoh header dengan dua kolom, kolom kiri berisi teks seperti ini.
+<!-- ================= HERO SECTION ================= -->
+<section id="hero-section" class="py-5">
+  <div class="container py-lg-5">
+    <div class="row align-items-center">
+      <!-- Left Coloums -->
+      <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
+        <p class="text-secondary mb-2">Hi I am</p>
+        <h1 class="display-4 fw-bold mb-0">Muhammad Novid Romadhoni</h1>
+        <h1 class="display-4 fw-bold ">Web Developer</h1>
+        <p class="text-secondary my-4 px-lg-0 px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Nesciunt consectetur necessitatibus laboriosam possimus dolores aspernatur vitae reiciendis ab fugiat. Officiis, 
+          dignissimos quo adipisci nostrum rem deleniti numquam error fugiat sint?
+        </p>
+        <!-- Button -->
+        <button class="btn btn-primary fw-semibold px-4 py-2 d-none d-md-block" data-bs-toggle="modal" data-bs-target="#aboutModal">
+          Hire Me
+        </button>
+      </div>
+        <!-- Right Coloums -->
+      <div class="col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+        <img src="images/profile.jpg" class="rounded-circle border border-5 border-light shadow-lg profile-img" alt="profile">
+        <!-- Icons -->
+        <div class="social-icons mt-4 d-none d-md-block">
+          <a href="#" class="text-dark mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-dark mx-2 fs-5"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-dark mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-dark mx-2 fs-5"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ME SECTION ================= -->
+
+<section id="aboutme-section" class="py-5 bg-light">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold mb-3">About Me</h2>
+      <p class="text-muted">Lorem ipsum dolor sit amet consectetur. 
+        Tristique amet sed massa nibh lectus netus in. 
+        Aliquet donec morbi convallis pretium. Turpis tempus pharetra
       </p>
-      <button>Pelajari lebih lanjut</button>
-    </td>
-    <td width="50%" align="center" valign="middle">
-      <img src="images/profile.jpg" alt="Gambar" />
-    </td>
-  </tr>
-</table>
+    </div>
+    <!-- Grid -->
+     <div class="row g-4">
+      
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm p-4 h-100">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-person-fill text-primary fs-4 me-2"></i>
+          </div>
+          <h6 class="fw-bold mb-1"> Full Name</h6>
+          <p class="text-muted mb-0 small">Muhammad Novi Romadhoni</p>
+        </div>
+      </div>
+      
+     <div class="col-lg-4">
+        <div class="card border-0 shadow-sm p-4 h-100">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-mortarboard-fill text-primary fs-4 me-2"></i>
+          </div>
+          <h6 class="fw-bold mb-1">Education</h6>
+          <p class="text-muted mb-0 small">Universitas Islam Indonesia</p>
+        </div>
+      </div>
 
-<br>
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm p-4 h-100">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-briefcase-fill text-primary fs-4 me-2"></i>
+          </div>
+          <h6 class="fw-bold mb-1">Work</h6>
+          <p class="text-muted mb-0 small">Freelancer</p>
+        </div>
+      </div>
 
-<!-- ================= SECTION 3 : BIODATA (6 BOX) ================= -->
-<table border="0" width="100%" id="section3">
-    <tr>
-        <td colspan="3" align="center"><h2>About Me</h2>
-            <p>A brief introduction about myself</p>
-        </td>
-    </tr>
-  <tr>
-    <td align="center">Fullname</td>
-    <td align="center">Education</td>
-    <td align="center">Pekerjaan</td>
-  </tr>
-  <tr>
-    <td align="center">Contact</td>
-    <td align="center">Hobi</td>
-    <td align="center">Alamat</td>
-  </tr>
-</table>
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm p-4 h-100">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-envelope-fill text-primary fs-4 me-2"></i>
+          </div>
+          <h6 class="fw-bold mb-1">Contact</h6>
+          <p class="text-muted mb-0 small">muhammadnovid15@gmail.com</p>
+        </div>
+      </div>
+    
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm p-4 h-100">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-controller text-primary fs-4 me-2"></i>
+          </div>
+          <h6 class="fw-bold mb-1">Hobby</h6>
+          <p class="text-muted mb-0 small">Futsal, Badminton, Coding, and Design</p>
+        </div>
+      </div>
 
-<br>
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm p-4 h-100">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-geo-alt-fill text-primary fs-4 me-2"></i>
+          </div>
+          <h6 class="fw-bold mb-1">Address</h6>
+          <p class="text-muted mb-0 small">Tanjungpinang, Indonesia</p>
+        </div>
+      </div>
 
-<!-- ================= SECTION 4 : PORTOFOLIO ================= -->
-<table border="0" width="100%" id="section4">
-    <tr>
-        <td colspan="2" align="center"><h2>Portofolio</h2>
-        </td>
-    </tr>
-  <tr>
-    <td align="center" >
-        <img src="images/proyek1.jpg" alt="Gambar" />
-        <h3>Proyek 1</h3>
-        <p>Deskripsi Proyek 1</p>
-    </td>
-    <td align="center">
-        <img src="images/proyek2.jpg" alt="Gambar" />
-        <h3>Proyek 2</h3>
-        <p>Deskripsi Proyek 2</p>
-    </td>
-  </tr>
-    <tr>
-    <td align="center">
-        <img src="images/proyek3.jpg" alt="Gambar P" />
-        <h3>Proyek 3</h3>
-        <p>Deskripsi Proyek 3</p>
-    </td>
-    <td align="center">
-        <img src="images/proyek4.jpg" alt="Gambar" />
-        <h3>Proyek 4</h3>
-        <p>Deskripsi Proyek 4</p>
-    </td>
-  </tr>
+    </div>
+  </div>
+</section>
 
-</table>
+<!-- ================= PROJECTS SECTION ================= -->
+<section id="project-section" class="py-5">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold mb-3">My Projects</h2>
+      <p class="text-muted">Lorem ipsum dolor sit amet consectetur. 
+        Tristique amet sed massa nibh lectus netus in. 
+        Aliquet donec morbi convallis pretium. Turpis tempus pharetra
+      </p>
+    </div>
 
+    <!-- Tab Navigation -->
+    <div class="d-flex justify-content-center mb-4">
+      <ul class="nav nav-pills" id="projecttabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button">All</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="ui/ux" data-bs-toggle="pill" data-bs-target="#uiux" type="button">UI/UX</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="web-app" data-bs-toggle="pill" data-bs-target="#webapplication" type="button">Web Aplications</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="projecttabscontent">
+      <div class="tab-pane fade show active" id="all" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="images/proyek1.jpg" class="card-img-top" alt="Project 1">
+              <div class="card-body text-center">
+                <p class="text-primary small mb-1">Web Design</p>
+                <h5 class="card-title fw-bold">AirCalling Landing Page Design</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="images/proyek2.jpg" class="card-img-top" alt="Project 2">
+              <div class="card-body text-center">
+                <p class="text-primary small mb-1">Web Design</p>
+                <h5 class="card-title fw-bold">Business Landing Page Design</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="images/proyek3.jpg" class="card-img-top" alt="Project 3">
+              <div class="card-body text-center">
+                <p class="text-primary small mb-1">Web Design</p>
+                <h5 class="card-title fw-bold">E-Commerce Landing Page Design</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="uiux" role="tabpanel">
+        <p class="text-center text-muted">Semua project akan ditampilkan di sini</p>
+      </div>
+
+      <div class="tab-pane fade" id="webapplication" role="tabpanel">
+        <p class="text-center text-muted">Semua project akan ditampilkan di sini</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PopUp Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      <!-- Header -->
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Body -->
+      <div class="modal-body text-center px-4 pb-5">
+        <div class="mb-4">
+          <img src="images/profile.jpg" alt="profile" class="rounded-circle border border-3 border-primary" style="width: 150px; height: 150px; object-fit: cover;">
+        </div>
+
+        <p class="text-secondary mb-1">Hi, I am</p>
+        <h3 class="fw-bold mb-1">Muhammad Novid Romadhoni</h3>
+        <h5 class="fw-bold mb-3">Web Developer</h5>
+
+        <p class="text-secondary small px-3 mb-4">Lorem ipsum dolor sit amet consectetur. 
+        Tristique amet sed massa nibh lectus netus in. 
+        Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
+
+        <!-- Button -->
+         <button class="btn btn-primary fw-semibold px-4" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
