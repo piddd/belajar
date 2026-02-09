@@ -260,6 +260,17 @@ html {
   border-radius: 10px;
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-box p {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
 }
 
 .contact-box:hover{
