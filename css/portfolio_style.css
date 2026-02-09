@@ -244,6 +244,10 @@ html {
   opacity: 1;
 }
 
+.portfolio-info{
+  padding: 1rem;
+}
+
 /* Contact */
 .contact-wrapper {
   background-color: var(--dark-bg);
