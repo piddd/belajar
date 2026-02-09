@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novid Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/portfolio_style.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="#" >
+                <img src="images/Logo.png" alt="Logo" height="40" class="me-2">
+            </a>
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NavBar Menu -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacts</a>
+                    </li>
+                </ul>
+            </div>    
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Coloums -->
+                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold text-white mb-3">
+                        Hi, I'm <span class="text-primary">Muhammad Novid Romadhoni</span>
+                    </h1>
+                    <h3 class="text-light mb-4">UI/UX Designer | Frontend Developer</h3>
+                    <p class="text-secondary mb-4">Designing an interface that not only looks good, but also provides a seamless experience for users</p>
+                    <div class="d-grid d-md-flex gap-3">
+                        <button class="btn btn-primary btn-lg me-2" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            <i class="bi bi-envelope me-2"></i>Contact Me
+                        </button>
+                        <button class="btn btn-outline-primary btn-lg me-2" data-bs-toggle="modal" data-bs-target="cvModal">
+                            <i class="bi bi-briefcase me-2"></i>Curiculum Vitae
+                        </button>
+                    </div>
+                    
+                </div>
+                <!-- Right Coloums -->
+                <div class="col-lg-6 text-center">
+                    <div class="profile-image-wrapper">
+                        <img src="images/Profile.png" alt="Profile" class="img-fluid rounded-circle profile-img">
+                        <!-- Social Media -->
+                        <div class="social-icons mt-4">
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-dark">
+        <div class="container">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white">About Me</h2>
+                <div class="title-underline mx-auto"></div>
+            </div>
+            <!-- Content -->
+            <div class="align-items-start">
+                <div class="col-lg-12">
+                    <h3 class="text-primary mb-3">Who Am I?</h3>
+                    <p class="text-secondary mb-4">
+                        Bachelor of Informatics from Universitas Islam Indonesia with a focus on UI/UX Design. Experienced in designing aesthetic, functional, and user-friendly interfaces.
+                    </p>
+                    <p class="text-secondary mb-4">
+                        Actively involved in UI/UX projects and organizations to expand professional networks. Highly motivated to learn and contribute to creating impactful digital products.
+                    </p>
+                    <!-- Info Boxes -->
+                    <div class="row g-3">
+                        <div class="col-md-4 bg-dark-card">
+                            <i class="bi bi-mortarboard-fill text-primary fs-3"></i>
+                            <h6 class="text-white mt-2"> Education</h6>
+                            <p class="text-secondary medium mb-0"> Universitas Islam Indonesia</p>
+                        </div>
+                        <div class="col-md-4 bg-dark-card">
+                            <i class="bi bi-briefcase-fill text-primary fs-3"></i>
+                            <h6 class="text-white mt-2"> UI/UX Experience</h6>
+                            <p class="text-secondary medium mb-0">1+ year</p>
+                        </div>
+                        <div class="col-md-4 bg-dark-card">
+                            <i class="bi bi-briefcase-fill text-primary fs-3"></i>
+                            <h6 class="text-white mt-2"> Front-end Experience</h6>
+                            <p class="text-secondary medium mb-0"> <1 year </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container py-5">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white">Skills</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="text-secondary mt-3">Technologies and tools I work with</p>
+            </div>
+            <!-- Skills Grid -->
+            <div class="row g-4">
+                <!-- Skill Card -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-filetype-html fs-1 skill-icon"></i>
+                        <h5 class="text-white mt-3">HTML5</h5>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-primary" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-filetype-css fs-1 skill-icon"></i>
+                        <h5 class="text-white mt-3">CSS3</h5>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-primary" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-filetype-js fs-1 skill-icon"></i>
+                        <h5 class="text-white mt-3">JavaScript</h5>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-primary" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-bootstrap-fill fs-1 skill-icon"></i>
+                        <h5 class="text-white mt-3">Bootstrap</h5>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-primary" style="width: 88%;">88%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-palette-fill fs-1 skill-icon"></i>
+                        <h5 class="text-white mt-3">Figma</h5>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-primary" style="width: 92%;">92%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-git fs-1 skill-icon"></i>
+                        <h5 class="text-white mt-3">Git</h5>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-primary" style="width: 82%;">82%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-github fs-1 skill-icon"></i>
+                        <h5 class="text-white mt-3">GitHub</h5>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-primary" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-phone-fill fs-1 skill-icon"></i>
+                        <h5 class="text-white mt-3">UI/UX Design</h5>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-primary" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-dark">
+        <div class="container py-5">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white">My Portfolio</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="text-secondary mt-3">Recent projects I've worked on</p>
+            </div>
+            <!-- Carousel -->
+            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" ></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" ></button>
+                </div>
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-8 ">    
+                                <div class="portfolio-card">
+                                    <div class="portfolio-img-wrapper">
+                                        <img src="images/proyek1.jpg" alt="Project 1" class="img-fluid">
+                                        <div class="portfolio-overlay">
+                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                                <i class="bi bi-eye"></i> View Details
+                                            </button>
+                                        </div>
+                                        <div class="portfolio-info">
+                                            <h5 class="text-white">E-Commerce Website</h5>
+                                            <p class="text-secondary small ">UI/UX Design & Frontend</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-8 ">    
+                                <div class="portfolio-card">
+                                    <div class="portfolio-img-wrapper">
+                                        <img src="images/proyek2.jpg" alt="Project 2" class="img-fluid">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>First slide label</h5>
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                                <i class="bi bi-eye"></i> View Details
+                                            </button>
+                                        </div>
+                                        <div class="portfolio-info p-3">
+                                            <h5 class="text-white">E-Commerce Website</h5>
+                                            <p class="text-secondary small mb-0">UI/UX Design & Frontend</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-8 ">    
+                                <div class="portfolio-card">
+                                    <div class="portfolio-img-wrapper">
+                                        <img src="images/proyek3.jpg" alt="Project 3" class="img-fluid">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>First slide label</h5>
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                                <i class="bi bi-eye"></i> View Details
+                                            </button>
+                                        </div>
+                                        <div class="portfolio-info p-3">
+                                            <h5 class="text-white">E-Commerce Website</h5>
+                                            <p class="text-secondary small mb-0">UI/UX Design & Frontend</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button Previous & Next -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="previous">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container py-5">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white">Get In Touch</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="text-secondary mt-3">Feel free to reach out for collaborations or just a friendly hello</p>
+            </div>
+            <!-- Contact Info -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-wrapper p-5">
+                        <div class="row g-4 mb-5">
+                            <!-- Email -->
+                            <div class="col-md-4 text-center">
+                                <div class="contact-box p-3">
+                                    <i class="bi bi-envelope-fill text-primary fs-2"></i>
+                                    <h6 class="text-white mt-3">Email</h6>
+                                    <p class="text-secondary small mb-0">email@example.com</p>
+                                </div>
+                            </div>
+                            <!-- Phone -->
+                            <div class="col-md-4 text-center">
+                                <div class="contact-box p-3">
+                                    <i class="bi bi-telephone-fill text-primary fs-2"></i>
+                                    <h6 class="text-white mt-3">Phone</h6>
+                                    <p class="text-secondary small mb-0">+62 812-3456-7890</p>
+                                </div>
+                            </div>
+                            <!-- Location -->
+                            <div class="col-md-4 text-center">
+                                <div class="contact-box p-3">
+                                    <i class="bi bi-geo-alt-fill text-primary fs-2"></i>
+                                    <h6 class="text-white mt-3">Location</h6>
+                                    <p class="text-secondary small mb-0">Kota Anda, Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button Open Modal -->
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                <i class="bi bi-send me-2"></i>Send Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-light-gray mb-0">&copy; 2025 Muhammad Novid Romadhoni. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border-secondary">
+                <!-- Modal Header -->
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-white" id="contactModalLabel">Send Me a Message</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form>
+                    <!-- Name Input -->
+                        <div class="mb-3">
+                            <label class="form-label text-secondary">Your Name</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Enter your name">
+                        </div>
+                        
+                        <!-- Email Input -->
+                        <div class="mb-3">
+                            <label class="form-label text-secondary">Email Address</label>
+                            <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="Enter your email">
+                        </div>
+                        
+                        <!-- Subject Input -->
+                        <div class="mb-3">
+                            <label class="form-label text-secondary">Subject</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Subject">
+                        </div>
+                        
+                        <!-- Message Textarea -->
+                        <div class="mb-3">
+                            <label class="form-label text-secondary">Message</label>
+                            <textarea class="form-control bg-dark text-white border-secondary" rows="4" placeholder="Your message..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">
+                        <i class="bi bi-send me-2"></i>Send Message
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal 1-->
+    <div class="modal fade" id="projectModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-white">E-Commerce Website</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/proyek1.jpg" alt="Project 1" class="img-fluid rounded mb-3">
+                    <h6 class="text-primary">Project Description</h6>
+                    <p class="text-secondary">
+                        Deskripsi lengkap tentang project ini. Apa yang Anda buat, teknologi yang digunakan, 
+                        dan hasil yang dicapai.
+                    </p>
+                    <h6 class="text-primary mt-3">Technologies Used</h6>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-secondary">React</span>
+                        <span class="badge bg-secondary">Bootstrap</span>
+                        <span class="badge bg-secondary">JavaScript</span>
+                        <span class="badge bg-secondary">Figma</span>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary">
+                        <i class="bi bi-link-45deg me-2"></i>View Live
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project Modal 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-white">Mobile App Design</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/proyek2.jpg" alt="Project 2" class="img-fluid rounded mb-3">
+                    <h6 class="text-warning">Project Description</h6>
+                    <p class="text-secondary">
+                        Deskripsi project mobile app design Anda.
+                    </p>
+                    <h6 class="text-warning mt-3">Technologies Used</h6>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-secondary">Figma</span>
+                        <span class="badge bg-secondary">Adobe XD</span>
+                        <span class="badge bg-secondary">UI/UX</span>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-warning">
+                        <i class="bi bi-link-45deg me-2"></i>View Design
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-white">Mobile App Design</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/proyek3.jpg" alt="Project 3" class="img-fluid rounded mb-3">
+                    <h6 class="text-warning">Project Description</h6>
+                    <p class="text-secondary">
+                        Deskripsi project mobile app design Anda.
+                    </p>
+                    <h6 class="text-warning mt-3">Technologies Used</h6>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-secondary">Figma</span>
+                        <span class="badge bg-secondary">Adobe XD</span>
+                        <span class="badge bg-secondary">UI/UX</span>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-warning">
+                        <i class="bi bi-link-45deg me-2"></i>View Design
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+        // Navbar scroll effect
+        window.addEventListener('scroll', function(){
+            const navbar = document.querySelector('.navbar');
+            if(window.scrollY > 50){
+                navbar.classList.add('scrolled');    
+            }
+            else{
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for anchor links
+    </script>
+</body>
+</html>
